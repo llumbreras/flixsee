@@ -1,0 +1,24 @@
+%article.video_category
+  %header
+    %h3= link_to "Comedy"
+  .videos.row
+    - 6.times do
+      .video.col-sm-2
+        = link_to "", nil do
+          %img(src="/tmp/#{['about_time_small', 'rio_01_small', 'mr_peabody_small'].sample}.png")
+
+%article.video_category
+  %header
+    %h3= link_to "Drama"
+  .videos.row
+    - 6.times do
+      .video.col-sm-2
+        %img(src="/tmp/#{['happy_small', 'life_in_a_day_small', 'rio_02_small'].sample}.png")
+
+%article.video_category
+  %header
+    %h3= link_to "Documentary"
+  .videos.row
+    - 6.times do
+      .video.col-sm-2
+        %img(src="/tmp/#{['mr_peabody_small', 'one_day_on_earth_small', 'happy_small'].sample}.png")
